@@ -1,10 +1,11 @@
+import "@/styles/globals.css"
 import { Metadata, Viewport } from "next"
 import { cn } from "lib/utils"
-import { siteConfig } from "./config/site"
-import { ThemeProvider } from "./components/theme-provider"
-import { fontSans } from "./lib/fonts"
+import { siteConfig } from "../config/site"
+import { ThemeProvider } from "../components/theme-provider"
+import { fontSans } from "../lib/fonts"
 import { Toaster } from "@/components/ui/sonner"
-import { TailwindIndicator } from "./components/tailwind-indicator"
+import { TailwindIndicator } from "../components/tailwind-indicator"
 
 export const metadata: Metadata = {
   title: {
@@ -14,8 +15,8 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    // shortcut: "/favicon-16x16.png",
+    // apple: "/apple-touch-icon.png",
   },
 }
 
